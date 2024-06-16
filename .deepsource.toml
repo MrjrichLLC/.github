@@ -1,5 +1,7 @@
 version = 1
 
+test_patterns = [".deepsource.toml"]
+
 [[analyzers]]
 name = "shell"
 
@@ -15,3 +17,6 @@ name = "docker"
 
   [analyzers.meta]
   dockerfile_paths = ["actions.yml"]
+
+[[transformers]]
+name = "ktlint"
